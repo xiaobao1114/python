@@ -1,0 +1,24 @@
+-- test.test definition
+
+CREATE TABLE `test` (
+  `序号` int NOT NULL,
+  `状态代码` int NOT NULL,
+  `请求协议` varchar(255) NOT NULL,
+  `主机地址` varchar(255) NOT NULL,
+  `URL地址` text NOT NULL,
+  `内容长度` int NOT NULL,
+  `缓存` varchar(255) DEFAULT NULL,
+  `请求内容类型` varchar(255) DEFAULT NULL,
+  `进程` varchar(255) DEFAULT NULL,
+  `备注` text,
+  `自定义` text,
+  `X-HostIP` varchar(255) NOT NULL,
+  `RequestSize` int NOT NULL,
+  `ResponseSize` int NOT NULL,
+  `Referer` text,
+  `User-Agent` text NOT NULL,
+  `Start` datetime NOT NULL,
+  `uuid` varchar(255) NOT NULL,
+  `date_id` date NOT NULL,
+  `notes` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
